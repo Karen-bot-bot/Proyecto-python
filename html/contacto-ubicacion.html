@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Contacto</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar nav-productos">
+      <div class="logo">
+        <a href="../index.html">TOPE DE GAMA</a>
+      </div>
+      <div class="enlaces">
+        <ul class="desordenada">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="productos.html">Celulares</a></li>
+          <li><a href="contacto-ubicacion.html">Contacto</a></li>
+          <li>
+            <a href="#"><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAilJREFUWEftlrFO3EAQhmdWeMdXJemRAjTQIEW8QEKTFuUJwjWki3iAIJDgAUg60gBvENo0OV4gUpQmaZKLlAegs2cv2kEr2SdjjO1br8kVuLN3Z+bT/LP/GmHOHpwzHngAalLkRoeY+QAAJA9SSo2iKLpsShJyvQw0hSkUOSOiYciidbnaALn4V0T06T6gqiTL6z4DgC33IiKjOI437x2oWDBJkiWl1O/8m7V2eTAYjPuGqj32zHwGAK8ziHMi2v6vQEmSvFBKfckgrgDgODSQtfa82PlGY2RmJ9PT0CCFfGMiWs7fG4GMMdsictoj0B8iWmoNJCKPjTGuS4/6gELE91rr3dZAbmNpuINylU9vo2SuetkCAhJ9IyLnd9OnFZDbnabpCBGfB4QBRBxqrZ21zA7Ux3BrrZ8gorOT2YGyWQppAZVG21qyDMj9nuwHkq3ywp4JKOBw3/Aeb8lCWUDZezoBle43L/Xq/hxmkiyv3vF+u+U9nTrkgrtYQJX3dAYqQE0vxTbaIeK4bITlOC/J2hT33eMNlKbpiVJqKCK/lFJvoyj6XAUxmUxeWms/IOKKtfY0juM3dbBeQBUz9JOI1qoKMfMPAFjN13qZIWZ+BwCHhSITrbWuAjLGGBGJCmt7RHR0V5e8OsTM6wDwFQAWXGIR+XiXFE5aRNzJAP4BwAYRfQ8KlDm2g9pCxL9NJyeTeBEALupgXF6vDvmeoDZxD0BNXZq7Dl0DK+rYJYXamuEAAAAASUVORK5CYII=" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <article class="contacto">
+      <div class="formulario">
+        <form id="form" onsubmit="return validarFormulario()">
+          <h1 class="titulo-contacto">Contacto</h1>
+          <input type="text" placeholder="Nombre" id="nombre"> <br>
+          <input type="text" placeholder="Apellido" id="apellido"> <br>
+          <input type="email" placeholder="Email" id="email"> <br>
+          <input type="tel" placeholder="Número de telefono" id="cel"> <br>
+          <textarea name="" id="comentario" cols="49" rows="5" placeholder="Comentario"></textarea> <br>
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+      <div class="ubicacion">
+        <h1 class="titulo-contacto">Ubicación</h1>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3010.8053377251367!2d-58.360095863759355!3d-34.62168885842166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1680324540116!5m2!1ses!2sar"
+          height="400px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          class="mapa"></iframe>
+        <div class="calle">
+          <h3>Nos encontramos en: <p>Calle falsa 123</p>
+          </h3>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="redes">
+        <h2 class="titulo-redes">Redes:</h2>
+        <a href="/"><i class='bx bxl-whatsapp icon'></i></a>
+        <a href="/"><i class='bx bxl-instagram icon'></i></a>
+        <a href="/"><i class='bx bxl-facebook icon'></i></a>
+        <a href="/"><i class='bx bxl-twitter icon'></i></a>
+
+      </div>
+      <div class="nosotros">
+        <h2>Tope de gama</h2>
+        <a href="">Contacto</a>
+        <a href="">Nosotros</a>
+      </div>
+      <div class="politicas">
+        <a href="">Política de privacidad</a>
+        <a href="">Política de cookies</a>
+        <a href="">Política de calidad</a>
+        <a href="">Legal</a>
+      </div>
+    </div>
+    <div class="terminos-condiciones">
+      <p>Al usar nuestra página, aceptas nuestros términos y condiciones, incluyendo la política de privacidad y el uso
+        de cookies.</p>
+    </div>
+  </footer>
+  <script src="../js/validacionForm.js"></script>
+</body>
+
+</html>
